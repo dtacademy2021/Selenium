@@ -1,0 +1,6 @@
+#example of a gitignore file
+/.classpath
+/bin/
+/.settings/
+
+
