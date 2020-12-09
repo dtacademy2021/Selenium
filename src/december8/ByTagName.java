@@ -1,10 +1,13 @@
 package december8;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class LocatingLinks {
+public class ByTagName {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumFiles\\browserDrivers\\chromedriver.exe");
@@ -13,15 +16,10 @@ public class LocatingLinks {
 				
 		driver.get("https://cnn.com/");
 		
-//		
-//		driver.findElement(By.linkText("Videos")).click(); // one of the easiest and better approaches for locating links
-//		
-//		driver.navigate().back();
-		
-		driver.findElement(By.partialLinkText("Enter")).click(); 
+		List<WebElement> iframes = driver.findElements(By.tagName("iframe"));
 		
 		
-		
+		System.out.println(iframes.size());
 
 	}
 
