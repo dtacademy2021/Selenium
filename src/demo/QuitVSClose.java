@@ -19,15 +19,20 @@ public class QuitVSClose {
 		
 		driver.get("https://aws.amazon.com/"); // navigate to indicated url
 		
-//		driver.findElement(By.xpath("//i[@class='icon-twitter']")).click();
+		driver.findElement(By.xpath("//i[@class='icon-twitter']")).click();
 		
 		
 		
 		
-	//	driver.close(); // closes the current window but does not end the session
+//		driver.close(); // closes the current window but does not end the session
+		
+		
 		
 		
 		driver.quit();
+		
+//		driver.get("https://www.selenium.dev/projects/");
+		
 		
 		
 		
