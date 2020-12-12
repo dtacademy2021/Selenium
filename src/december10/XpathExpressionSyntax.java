@@ -30,10 +30,10 @@ public class XpathExpressionSyntax {
 		//p[contains(  text() , 'tech career in'  )] -> Partial text match
 		
 		
-		////a[@href='https://techhub.dice.com/2017-contact-us.html']/ancestor::li -> find the first ancestor of a that is li
+		////a[@href='https://techhub.dice.com/2017-contact-us.html']/ancestor::li -> find the first ancestor of "a" that is "li"
 		
 		
-		////li[@data-analytics-parent='For Employers']/following-sibling::li -> find the first li sibling of unique li
+		////li[@data-analytics-parent='For Employers']/following-sibling::li -> find the first "li" sibling of unique "li"
 		
 
 	}
